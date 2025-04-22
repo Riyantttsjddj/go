@@ -3,10 +3,10 @@ Description=WebSocket SSH Tunneling Server
 After=network.target
 
 [Service]
-ExecStart=/usr/local/go/bin/go run /path/to/ws-port80.go
-WorkingDirectory=/path/to/your/project
+ExecStart=/usr/local/go/bin/go run /root/go/ws-port80.go
+WorkingDirectory=/root/go/ws-port80.go
 Restart=always
-User=yourusername
+User=root
 
 [Install]
 WantedBy=multi-user.target
